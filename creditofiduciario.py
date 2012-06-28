@@ -10,6 +10,10 @@ class CreditoFiduciario(Credito):
         Credito.__init__(self)
         print("datos del fiduciario")
         self.fiduciario1=Fiduciario()
+    def imprimir(self):
+        Credito.imprimir(self)
+        self.fiduciario1.imprimir()
+        
     
     
           
