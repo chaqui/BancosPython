@@ -5,9 +5,9 @@ class Cliente1(object):
         self.segudnonombre=raw_input("ingrese el segundo nombre del cliente:")
         self.primerapellido=raw_input("ingrese el primer apellido del cliente:")
         self.segundoapellido=raw_input("ingrese el segundo apellido del cliente:")
-        self.correocliente=raw_input("ingrese el correo del cliente:")
-        self.telfonocliente=int(raw_input("ingrese el telefono del cliente:"))
-        self.dirreccioncliente=raw_input("ingrese la dirreccion del cliente:")
+        self.correo=raw_input("ingrese el correo del cliente:")
+        self.telfono=int(raw_input("ingrese el telefono del cliente:"))
+        self.dirreccion=raw_input("ingrese la dirreccion del cliente:")
     def imprimir(self):
         a="/"*80
         print a
