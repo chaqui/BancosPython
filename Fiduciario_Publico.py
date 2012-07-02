@@ -12,6 +12,6 @@ class MyClass(CreditoFiduciario):
             archivo=open("Archivos/FiduciarioPublico.txt","a")
         except:
             archivo=open("Archivos/FiduciarioPublico.txt","w")
-        archivo.write(self.cliente.nombre+" "+self.cliente.segudnonombre+" "+self.cliente.primerapellido+" "+self.cliente.segundoapellido+" "+self.cliente.dirreccioncliente+" "+self.cliente.correocliente+" "+str(self.cliente.telfonocliente)+" "+str(self.monto)+" "+str(self.cuotas)+" "+str(self.cuota)+" "+str(self.libro)+" "+str(self.finca)+" "+str(self.folio)+" "+str(self.escritura)+self.nombremunicipalidad+"¬")
+        archivo.write(self.cliente.nombre+" "+self.cliente.segudnonombre+" "+self.cliente.primerapellido+" "+self.cliente.segundoapellido+" "+self.cliente.dirreccioncliente+" "+self.cliente.correocliente+" "+str(self.cliente.telfonocliente)+" "+self.fiduciario1.nombre+" "+self.fiduciario1.segudnonombre+" "+self.fiduciario1.primerapellido+" "+self.fiduciario1.segundoapellido+" "+str(self.fiduciario1.telfono)+" "+self.fiduciario1.correo+" "+self.fiduciario1.dirreccion+" "+str(self.monto)+" "+str(self.cuotas)+" "+str(self.cuota)+" "+str(self.libro)+" "+str(self.finca)+" "+str(self.folio)+" "+str(self.escritura)+self.nombremunicipalidad+"¬")
         archivo.close()
         
