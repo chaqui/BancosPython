@@ -3,7 +3,7 @@ from Tarjeta_De_Circulacion import TarjetaDeCirculacion
 
 class VehiculosYMaquinaria(GarantiaPrendaria):
     def __init__(self):
-        GarantiaPrendaria.__init__(self)
+        GarantiaPrendaria.__init__(self,36)
         self.tarjetaDeCirculacion=TarjetaDeCirculacion()
     def imprimir(self):
         GarantiaPrendaria.imprimir(self)

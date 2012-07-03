@@ -5,7 +5,7 @@ class HipotecaPosesoria(Hipoteca):
 
 
     def __init__(self):
-        Hipoteca.__init__(self)
+        Hipoteca.__init__(self,240)
         self.escritura=int(raw_input("Ingrese el numero de escritura del documento:"))
         self.nombremunicipalidad=raw_input("Ingrese el nombre de la municipalidad:")
     def calcular(self):

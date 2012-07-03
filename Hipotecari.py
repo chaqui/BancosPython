@@ -5,8 +5,8 @@ Created on 26/06/2012
 '''
 import Credito
 class Hipoteca(Credito.Credito):
-    def __init__(self):
-        Credito.Credito.__init__(self)
+    def __init__(self,maximo):
+        Credito.Credito.__init__(self,maximo)
         self.libro=int(input("ingrese el libro del documento:"))
         self.folio=int(input("ingrese el folio del documento:"))
         self.finca=int(input("ingrese la finca del documento:"))

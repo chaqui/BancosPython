@@ -1,7 +1,7 @@
 from creditofiduciario import CreditoFiduciario
 class Fiduciario_Privado(CreditoFiduciario):
     def __init__(self):
-        CreditoFiduciario.__init__(self)
+        CreditoFiduciario.__init__(self,36)
     def calcular(self):
         self.cuota=self.monto*(0.01667/(1-(1+0.01667)**((self.cuotas)*-1)))
     def imprimir(self):

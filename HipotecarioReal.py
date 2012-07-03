@@ -2,7 +2,7 @@
 from Hipotecari import Hipoteca
 class HipotecaReal(Hipoteca):
     def __init__(self):
-        Hipoteca.__init__(self)
+        Hipoteca.__init__(self,240)
         self.registroDeInscripcion=int(raw_input("Ingrese el registro de inscripción del documento:"))
     def calcular(self):
         self.cuota=self.monto*(0.015/(1-(1+0.015)**((self.cuotas)*-1)))
