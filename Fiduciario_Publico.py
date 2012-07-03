@@ -1,5 +1,5 @@
 from creditofiduciario import CreditoFiduciario
-class MyClass(CreditoFiduciario):
+class FiduciarioPublico(CreditoFiduciario):
     def __init__(self):
         CreditoFiduciario.__init__(self,270)
     def calcular(self):
