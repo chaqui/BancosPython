@@ -1,3 +1,4 @@
+#coding: utf-8
 class Producto(object):
     def __init__(self):
         print"Ingrese los datos del producto."

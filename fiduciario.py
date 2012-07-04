@@ -1,8 +1,4 @@
-'''
-Created on 27/06/2012
-
-@author: josuechaqui
-'''
+#coding: utf-8
 from Cliente import Cliente1
 class Fiduciario(Cliente1):
     

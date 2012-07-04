@@ -1,8 +1,4 @@
-'''
-Created on 26/06/2012
-
-@author: josuechaqui
-'''
+#coding: utf-8
 import Credito
 class Hipoteca(Credito.Credito):
     def __init__(self,maximo):

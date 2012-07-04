@@ -1,8 +1,4 @@
-'''
-Created on 27/06/2012
-
-@author: josuechaqui
-'''
+#coding: utf-8
 from Credito import Credito
 from fiduciario import Fiduciario
 class CreditoFiduciario(Credito):

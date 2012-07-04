@@ -1,3 +1,4 @@
+#coding: utf-8
 from Garantia_Prendaria import GarantiaPrendaria
 from Clase_Producto import Producto
 class NoConvencional(GarantiaPrendaria):

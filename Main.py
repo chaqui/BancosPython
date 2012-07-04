@@ -1,3 +1,4 @@
+#coding: utf-8
 from Clase_Convencional import Convencional
 from Clase_No_Convencional import NoConvencional
 from Fiduciario_Privado import Fiduciario_Privado
@@ -42,8 +43,31 @@ class Principal(object):
             hipotecareal.imprimir()
             hipotecareal.guardar()
         elif self.respuesta==2:
-            
+            hipotecaposesoria=HipotecaPosesoria()
+            hipotecaposesoria.imprimir()
+            hipotecaposesoria.guardar()
+        elif self.respuesta==3:
+            fiduciariopublico=FiduciarioPublico()
+            fiduciariopublico.imprimir()
+            fiduciariopublico.guardar()
+        elif self.respuesta==4:
+            fiduciarioprivado=Fiduciario_Privado()
+            fiduciarioprivado.imprimir()
+            fiduciarioprivado.guardar()
+        elif self.respuesta==5:
+            vehiculosymaquinaria=VehiculosYMaquinaria()
+            vehiculosymaquinaria.Guardar()
+            vehiculosymaquinaria.imprimir()
+        elif self.respuesta==6:
+            convencional=Convencional()
+            convencional.guardar()
+            convencional.imprimir()
+        elif self.respuesta==7:
+            noconvencional= NoConvencional()
+            noconvencional.guardar()
+            noconvencional.imprimir()
     def buscar(self):
         pass
-
+principal=Principal()
+principal.principal()
         

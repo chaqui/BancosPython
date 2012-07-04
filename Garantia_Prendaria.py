@@ -1,8 +1,4 @@
-'''
-Created on 3/07/2012
-
-@author: josuechaqui
-'''
+#coding: utf-8
 from Credito import Credito
 class GarantiaPrendaria(Credito):
     def __init__(self,maximo):

@@ -1,3 +1,4 @@
+#coding: utf-8
 class TarjetaDeCirculacion(object):
     def __init__(self):
         print("Profavor ingrese los datos de la circulacion.")

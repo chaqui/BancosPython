@@ -1,3 +1,4 @@
+#coding: utf-8
 from creditofiduciario import CreditoFiduciario
 class Fiduciario_Privado(CreditoFiduciario):
     def __init__(self):
