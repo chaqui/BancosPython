@@ -13,9 +13,9 @@ class Credito(object):
         print"ingrese los datos del credito"
         self.monto=float(raw_input("ingrese el monto del credito:"))
         self.cuotas=1
-        while((self.cuota>=maxima)or(self.cuotas<1)):
+        while((self.cuotas>=maxima)or(self.cuotas<1)):
             self.cuotas=int(raw_input("cuotas:"))
-            if ((self.cuota>=maxima)or(self.cuota<1)):
+            if ((self.cuotas>=maxima)or(self.cuotas<1)):
                 print"error numero incorrecto"             
         self.nocredito=1
     def imprimir(self):

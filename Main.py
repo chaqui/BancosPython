@@ -6,12 +6,10 @@ from Fiduciario_Publico import FiduciarioPublico
 from Vehiculos_Y_Maquinaria import VehiculosYMaquinaria
 from HipotecaPosesoria import HipotecaPosesoria
 from HipotecarioReal import HipotecaReal    
-import os 
 class Principal(object):
     def principal(self):
         self.res=0
-        while(self.res!=3):
-            os.system('cls')
+        while(self.res!=2):
             print"¿que desea hacer?"
             print"ingresar cliente.......0"
             print"buscar cliente.........1"
@@ -25,10 +23,10 @@ class Principal(object):
                 self.res=raw_input("¿desea regresar al menu? (1=si,2=no)")
             elif self.respuesta==2:
                 print"saliendo.."
+                self.res=2
             else :
                 print"error ingreso equivocado"
     def ingresar(self):
-        os.system('cls')
         print".........¿que tipo de credito desea hacer?........."
         print"1.....................Hipoteca con Derechos Reales."
         print"2.................Hipoteca con Derechos Posesorios."
@@ -37,8 +35,9 @@ class Principal(object):
         print"5....Credito con Garantia de Vehiculo / Maquinaria."
         print"6................Credito con Garantia convencional."
         print"7.............Credito con Garantia No Convencional."
-        self.respuesta=raw_input("ingrese la opcion deseada:")
+        self.respuesta=int(raw_input("ingrese la opcion deseada:"))
         if self.respuesta==1:
+            print"1"
             hipotecareal=HipotecaReal()
             hipotecareal.imprimir()
             hipotecareal.guardar()
@@ -70,4 +69,5 @@ class Principal(object):
         pass
 principal=Principal()
 principal.principal()
+
         
