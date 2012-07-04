@@ -39,30 +39,37 @@ class Principal(object):
         if self.respuesta==1:
             print"1"
             hipotecareal=HipotecaReal()
+            hipotecareal.calcular()
             hipotecareal.imprimir()
             hipotecareal.guardar()
         elif self.respuesta==2:
             hipotecaposesoria=HipotecaPosesoria()
+            hipotecaposesoria.calcular()
             hipotecaposesoria.imprimir()
             hipotecaposesoria.guardar()
         elif self.respuesta==3:
             fiduciariopublico=FiduciarioPublico()
+            fiduciariopublico.calcular()
             fiduciariopublico.imprimir()
             fiduciariopublico.guardar()
         elif self.respuesta==4:
             fiduciarioprivado=Fiduciario_Privado()
+            fiduciarioprivado.calcular()
             fiduciarioprivado.imprimir()
             fiduciarioprivado.guardar()
         elif self.respuesta==5:
             vehiculosymaquinaria=VehiculosYMaquinaria()
+            vehiculosymaquinaria.calcular()
             vehiculosymaquinaria.Guardar()
             vehiculosymaquinaria.imprimir()
         elif self.respuesta==6:
             convencional=Convencional()
+            convencional.calcular()
             convencional.guardar()
             convencional.imprimir()
         elif self.respuesta==7:
             noconvencional= NoConvencional()
+            noconvencional.calcular()
             noconvencional.guardar()
             noconvencional.imprimir()
     def buscar(self):

@@ -12,4 +12,4 @@ class Cliente1(object):
         a="/"*80
         print a
         print "datos del usuario:"
-        print("el usuario es: "+self.nombre+" "+self.segudnonombre+" "+self.primerapellido+" "+self.primerapellido+" "+self.segundoapellido+"\n correo:"+self.correocliente+" \n telefono:"+str(self.telfonocliente)+"\n dirreccion:"+self.dirreccioncliente)
+        print("el usuario es: "+self.nombre+" "+self.segudnonombre+" "+self.primerapellido+" "+self.primerapellido+" "+self.segundoapellido+"\n correo:"+self.correo+" \n telefono:"+str(self.telfono)+"\n dirreccion:"+self.dirreccion)

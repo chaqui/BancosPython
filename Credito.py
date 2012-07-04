@@ -12,7 +12,7 @@ class Credito(object):
         self.cliente.ingresar()
         print"ingrese los datos del credito"
         self.monto=float(raw_input("ingrese el monto del credito:"))
-        self.cuotas=1
+        self.cuotas=1000
         while((self.cuotas>=maxima)or(self.cuotas<1)):
             self.cuotas=int(raw_input("cuotas:"))
             if ((self.cuotas>=maxima)or(self.cuotas<1)):
