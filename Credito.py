@@ -42,6 +42,9 @@ class Credito(object):
         lectura= open(archivo,'r')
         contenido=lectura.read()
         return contenido
+    def guardar(self,html,archivo):
+        escritura=open(archivo,'w')
+        escritura.write(html)
         
             
             

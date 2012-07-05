@@ -17,6 +17,29 @@ class HipotecaReal(Hipoteca):
             archivo=open("Archivos/HipotecaReal.txt","w")
         archivo.write(self.cliente.nombre+" "+self.cliente.segudnonombre+" "+self.cliente.primerapellido+" "+self.cliente.segundoapellido+" "+self.cliente.dirreccion+" "+self.cliente.correo+" "+str(self.cliente.telfono)+" "+str(self.monto)+" "+str(self.cuotas)+" "+str(self.cuota)+" "+str(self.libro)+" "+str(self.finca)+" "+str(self.folio)+" "+str(self.registroDeInscripcion)+"¬")
         archivo.close()
+
+    def imprimir_web(self):
+        html=self.leerplantilla("hml/hipotecareal.html")
+        diccionario=dict(
+                         Nombre=self.cliente.nombre,
+                         SNombre=self.cliente.segudnonombre,
+                         PrimerApellido=self.cliente.primerapellido,
+                         segundoapellido=self.cliente.segundoapellido,
+                         telefono=self.cliente.segundoapellido,
+                         correo=self.cliente.correo,
+                         dirreccion=self.cliente.dirreccion,
+                         numero=self.nocredito,
+                         monto=self.monto,
+                         cuotas=self.cuotas,
+                         cuota=self.cuota,
+                         finca=self.finca,
+                         libro=self.libro,
+                         folio=self.folio,
+                         registrodeInscripcion=self.registroDeInscripcion,
+                         )
+        html = Template(html).safe_substitute(diccionario)
+        self.guardar(html,"html imprimir/hipotecareal.html")
+        
     
         
         
