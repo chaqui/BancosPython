@@ -1,4 +1,5 @@
 #coding: utf-8
+from string import Template
 from Hipotecari import Hipoteca
 class HipotecaReal(Hipoteca):
     def __init__(self):
