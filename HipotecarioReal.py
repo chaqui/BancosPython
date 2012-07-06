@@ -15,7 +15,7 @@ class HipotecaReal(Hipoteca):
             archivo=open("Archivos/HipotecaReal.txt","a")
         except:
             archivo=open("Archivos/HipotecaReal.txt","w")
-        archivo.write(self.cliente.nombre+" "+self.cliente.segudnonombre+" "+self.cliente.primerapellido+" "+self.cliente.segundoapellido+" "+self.cliente.dirreccion+" "+self.cliente.correo+" "+str(self.cliente.telfono)+" "+str(self.monto)+" "+str(self.cuotas)+" "+str(self.cuota)+" "+str(self.libro)+" "+str(self.finca)+" "+str(self.folio)+" "+str(self.registroDeInscripcion)+"¬")
+        archivo.write(self.cliente.nombre+"\n"+self.cliente.segudnonombre+"\n"+self.cliente.primerapellido+"\n"+self.cliente.segundoapellido+"\n"+self.cliente.dirreccion+"\n"+self.cliente.correo+"\n"+str(self.cliente.telfono)+"\n"+str(self.monto)+"\n"+str(self.cuotas)+"\n"+str(self.cuota)+"\n"+str(self.libro)+"\n"+str(self.finca)+"\n"+str(self.folio)+"\n"+str(self.registroDeInscripcion)+"¬")
         archivo.close()
 
     def imprimir_web(self):

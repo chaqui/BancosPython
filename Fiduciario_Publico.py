@@ -14,7 +14,7 @@ class FiduciarioPublico(CreditoFiduciario):
             archivo=open("Archivos/FiduciarioPublico.txt","a")
         except:
             archivo=open("Archivos/FiduciarioPublico.txt","w")
-        archivo.write(self.cliente.nombre+" "+self.cliente.segudnonombre+" "+self.cliente.primerapellido+" "+self.cliente.segundoapellido+" "+self.cliente.dirreccioncliente+" "+self.cliente.correocliente+" "+str(self.cliente.telfonocliente)+" "+self.fiduciario1.nombre+" "+self.fiduciario1.segudnonombre+" "+self.fiduciario1.primerapellido+" "+self.fiduciario1.segundoapellido+" "+str(self.fiduciario1.telfono)+" "+self.fiduciario1.correo+" "+self.fiduciario1.dirreccion+" "+str(self.monto)+" "+str(self.cuotas)+" "+str(self.cuota)+" "+str(self.libro)+" "+str(self.finca)+" "+str(self.folio)+" "+str(self.escritura)+self.nombremunicipalidad+"¬")
+        archivo.write(self.cliente.nombre+"\n"+self.cliente.segudnonombre+"\n"+self.cliente.primerapellido+"\n"+self.cliente.segundoapellido+"\n"+self.cliente.dirreccioncliente+"\n"+self.cliente.correocliente+"\n"+str(self.cliente.telfonocliente)+"\n"+self.fiduciario1.nombre+"\n"+self.fiduciario1.segudnonombre+"\n"+self.fiduciario1.primerapellido+"\n"+self.fiduciario1.segundoapellido+"\n"+str(self.fiduciario1.telfono)+"\n"+self.fiduciario1.correo+"\n"+self.fiduciario1.dirreccion+"\n"+str(self.monto)+"\n"+str(self.cuotas)+"\n"+str(self.cuota)+"\n"+str(self.libro)+"\n"+str(self.finca)+"\n"+str(self.folio)+"\n"+str(self.escritura)+self.nombremunicipalidad+"¬")
         archivo.close()
     def imprimir_web(self):
             html=self.leerplantilla("hml/Publico.html")
