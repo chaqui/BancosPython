@@ -6,6 +6,7 @@ from Fiduciario_Publico import FiduciarioPublico
 from Vehiculos_Y_Maquinaria import VehiculosYMaquinaria
 from HipotecaPosesoria import HipotecaPosesoria
 from HipotecarioReal import HipotecaReal    
+from buscar import Buscar
 class Principal(object):
     def principal(self):
         self.res=0
@@ -15,6 +16,7 @@ class Principal(object):
             print"buscar cliente.........1"
             print"salir..................2"
             self.respuesta=int(raw_input("Ingrese su respuesta:"))
+            self.res=self.respuesta
             if self.respuesta==0 :
                 self.ingresar()
                 self.res=raw_input("¿desea regresar al menu? (1=si,2=no)")
@@ -73,7 +75,7 @@ class Principal(object):
             noconvencional.guardar()
             noconvencional.imprimir()
     def buscar(self):
-        pass
+        self.serch=Buscar()
 principal=Principal()
 principal.principal()
 

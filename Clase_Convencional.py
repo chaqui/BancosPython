@@ -33,7 +33,6 @@ class Convencional(GarantiaPrendaria):
                          tipo=self.producto.tipo,
                          cantidad=self.producto.cantidad,
                          costo=self.producto.costo,
-                         numero=self.nocredito,
                          monto=self.monto,
                          cuotas=self.cuotas,
                          cuota=self.cuota,

@@ -34,7 +34,6 @@ class Fiduciario_Privado(CreditoFiduciario):
                          telefonofid=self.cliente.segundoapellido,
                          correofid=self.cliente.correo,
                          dirreccionfid=self.cliente.dirreccion,
-                         numero=self.nocredito,
                          monto=self.monto,
                          cuotas=self.cuotas,
                          cuota=self.cuota,
