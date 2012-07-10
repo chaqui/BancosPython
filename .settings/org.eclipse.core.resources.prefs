@@ -13,6 +13,7 @@ encoding/HipotecarioReal.py=utf-8
 encoding/Main.py=utf-8
 encoding/Tarjeta_De_Circulacion.py=utf-8
 encoding/Vehiculos_Y_Maquinaria.py=utf-8
+encoding/buscar.py=utf-8
 encoding/creditofiduciario.py=utf-8
 encoding/fiduciario.py=utf-8
 encoding/produccion.py=utf-8

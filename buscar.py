@@ -1,3 +1,4 @@
+#coding: utf-8
 class Buscar(object):
     def __init__(self):
         self.busqueda1=raw_input("ingrese el nombre a buscar: ")
